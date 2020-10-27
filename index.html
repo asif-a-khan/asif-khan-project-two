@@ -7,6 +7,137 @@
     <link rel="stylesheet" href="styles/style.css" type="text/css"> 
 </head>
 <body>
-    
+    <!-- From the looks of it, the header consists of a navbar and a container underneath.
+    The container will hold two divs side to side. The first of which will be, the h1. The latter will be the
+    container for the home-box-header. -->
+    <header>
+        <div class="wrapper">
+            <!-- A responsive navbar that utilizes flexbox to horizontally align the list items. -->
+            <nav>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+            <!-- The flex container for the h1 and home-box-header.png -->
+            <article>
+                <div>
+                    <h1>THE<br>RESTAURANT<br>MALL</h1>
+                </div>
+                <div></div>
+            </article>
+        </div>
+    </header>
+    <!-- The remainder of the page can be split into 6 sections. -->
+    <main>
+        <!-- Not so ironically, here is section1. A 2x2 article layout. 
+        Each article contains an h2 followed by a paragraph.Each h2 must be prepended with the corresponding icon. -->
+        <section>
+            <div>
+                <article>
+                    <h2>LOCATION</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed culpa ipsam quasi eius alias similique enim sapiente deleniti error iusto?
+                    </p>
+                </article>
+                <article>
+                    <h2>COMMUNITY</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed culpa ipsam quasi eius alias similique enim sapiente deleniti error iusto?
+                    </p>
+                </article>
+                <article>
+                    <h2>BLOG</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed culpa ipsam quasi eius alias similique enim sapiente deleniti error iusto?
+                    </p>
+                </article>
+                <article>
+                    <h2>GET IN TOUCH</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed culpa ipsam quasi eius alias similique enim sapiente deleniti error iusto?
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- Moving onto section2. Another 2x2 layout. The order of which is as follows: Figure > Article > Article.> Figure.
+        Each container in the layout will have a gap on both x and y axis. The figures will be positioned relative to the container in order to 
+        bleed out the top and bottom of the section. -->
+        <section>
+            <div>
+                <figure>
+                    <img src="" alt="">
+                </figure>
+                <article>
+                    <h3>BEST BURGERS</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus dicta assumenda alias omnis tempora itaque. Quidem natus cupiditate placeat odio voluptatem, eaque aliquid hic veritatis, consectetur quam fugiat possimus.
+                    </p>
+                    <span>
+                        <a href="">READ MORE</a>
+                    </span>
+                </article>
+                <article>
+                    <h3>TRY SOMETHING NEW</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus dicta assumenda alias omnis tempora itaque. Quidem natus cupiditate placeat odio voluptatem, eaque aliquid hic veritatis, consectetur quam fugiat possimus.
+                    </p>
+                    <span>
+                        <a href="">READ MORE</a>
+                    </span>
+                </article>
+                <figure>
+                    <img src="" alt="">
+                </figure>
+            </div>
+        </section>
+        <!-- Section3 -->
+        <section>
+            <div class="wrapper">
+                <h3>WIN A $100 GIFT CARD</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, blanditiis officiis nesciunt nulla commodi, dolor perspiciatis ea expedita fugit in hic! Quibusdam optio atque similique delectus nostrum velit dolores incidunt asperiores! Optio obcaecati unde nam.</p>
+                <span>
+                    <a href="">FIND OUT MORE</a>
+                </span>
+            </div>
+        </section>
+        <!-- Section4 -->
+        <section>
+            <figure>
+                <img src="" alt="">
+            </figure>
+        </section>
+        <!-- Section5 -->
+        <section>
+            <div class="wrapper">
+                <article>
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <figcaption>
+                        <h3>BRINGING NATURE IN SPACES</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus iste ipsa quas quis officiis rem perferendis modi debitis asperiores autem deserunt error inventore assumenda molestiae, voluptas beatae ut placeat aperiam molestias saepe ex suscipit quasi id? Rerum, illo corrupti eaque ea molestiae voluptates amet voluptate, pariatur consequuntur dolore vel?</p>
+                        <span>
+                            <a href="">FIND OUT MORE</a>
+                        </span>
+                    </figcaption>
+                </article>
+            </div>
+        </section>
+        <!-- Section6 -->
+        <section>
+            <div class="wrapper">
+                <figure><img src="" alt=""></figure>
+                <figure><img src="" alt=""></figure>
+                <figure><img src="" alt=""></figure>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </footer>
 </body>
 </html>
