@@ -322,7 +322,7 @@ a, a:visited, a:active, a:hover {
           flex-direction: row;
 }
 
-.headerTitle__Heading {
+.headerTitle__HeadingContainer {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 45px;
   font-weight: 600;
@@ -330,7 +330,9 @@ a, a:visited, a:active, a:hover {
   line-height: 99.8px;
 }
 
-.headerTitle__Heading--whiteBG {
+.headerTitle__HeadingContainer__Heading--whiteBG {
+  padding-top: 10px;
+  text-align: center;
   background-color: white;
   color: black;
 }

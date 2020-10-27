@@ -32,11 +32,15 @@
 .headerTitle {
     width: 100%;
     @include flexIt();
-    &__Heading {
+    &__HeadingContainer {
         @include josefineHeader(45px, white, 600);
-        &--whiteBG {
-            background-color: white;
-            color: black;
+        &__Heading {
+            &--whiteBG {
+                padding-top: 10px;
+                text-align: center;
+                background-color: white;
+                color: black;
+            }
         }
     }
 }
