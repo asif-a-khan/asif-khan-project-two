@@ -303,7 +303,7 @@ a, a:visited, a:active, a:hover {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: white;
@@ -323,7 +323,7 @@ a, a:visited, a:active, a:hover {
 }
 
 .headerTitle__Heading {
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 45px;
   font-weight: 600;
   color: white;

@@ -1,7 +1,7 @@
 // Font Styles
 
 @mixin josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px) {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: $fontSize;
     font-weight: $weight;
     color: $color;
