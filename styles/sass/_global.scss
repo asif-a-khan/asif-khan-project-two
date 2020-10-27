@@ -1,12 +1,28 @@
 // Colors
 $yellow: #FDD300;
 $almostBlack: #171B0E;
-$pine: #23B31B;
+$pine: #2B331B;
 $black: #0f0f0f;
 
 // Global styles
 html {
     overflow-x: hidden;
+}
+
+section {
+    background-color: $pine;
+}
+
+section:nth-of-type(even) {
+    background-color: $almostBlack;
+}
+
+section:nth-of-type(3) h3{
+    margin-top: 0;
+}
+
+figure {
+    margin: 0;
 }
 
 ul {

@@ -221,7 +221,7 @@ html {
           box-sizing: inherit;
 }
 
-.sr-only {
+.srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -237,6 +237,22 @@ html {
 
 html {
   overflow-x: hidden;
+}
+
+section {
+  background-color: #2B331B;
+}
+
+section:nth-of-type(even) {
+  background-color: #171B0E;
+}
+
+section:nth-of-type(3) h3 {
+  margin-top: 0;
+}
+
+figure {
+  margin: 0;
 }
 
 ul {
@@ -265,6 +281,7 @@ a, a:visited, a:active, a:hover {
 
 .bodyText {
   font-family: 'Barlow', sans-serif;
+  margin: 0;
   font-size: 28px;
   letter-spacing: default;
 }
@@ -351,4 +368,75 @@ a, a:visited, a:active, a:hover {
   position: relative;
   left: 35%;
   top: 250px;
+}
+
+.homeSection1 {
+  padding: 250px 0 50px 0;
+}
+
+.s1Grid {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row-gap: 100px;
+}
+
+.s1Grid article {
+  -ms-grid-columns: 1fr 9fr;
+      grid-template-columns: 1fr 9fr;
+  color: white;
+}
+
+.s1Grid article.gridIt div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.s1Grid article.gridIt div:nth-of-type(1) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.s1Grid div:nth-of-type(2) h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  color: white;
+  line-height: 99.8px;
+  margin: 0;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 75%;
+  background-color: #FDD300;
+}
+
+.icon {
+  font-size: 2rem;
+  color: black;
 }

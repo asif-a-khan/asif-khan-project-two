@@ -1,0 +1,51 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// 
+
+.homeSection1 {
+    padding: 250px 0 50px 0;
+}
+
+.s1Grid {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 100px;
+    // justify-items: center;
+}
+
+.s1Grid article {
+    grid-template-columns: 1fr 9fr;
+    color: white;
+}
+
+.s1Grid article.gridIt div {
+    @include flexIt(column);
+    justify-content: flex-start;
+}
+
+.s1Grid article.gridIt div:nth-of-type(1){
+    align-items: center;
+}
+
+.s1Grid div:nth-of-type(2) h2 {
+    @include josefineHeader(45px, white);
+    margin: 0;
+}
+
+.iconContainer {
+    @include flexIt();
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 75%;
+    background-color: $yellow;
+    
+}
+
+.icon {
+    font-size: 2rem;
+    color: black;
+}
+
