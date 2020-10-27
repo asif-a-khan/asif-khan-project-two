@@ -1,0 +1,39 @@
+// Colors
+$yellow: #FDD300;
+$almostBlack: #171B0E;
+$pine: #23B31B;
+$black: #0f0f0f;
+
+// Global styles
+html {
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a, a:visited, a:active, a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+// Utility
+@mixin flexIt($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+.gridIt {
+    display: grid;
+}

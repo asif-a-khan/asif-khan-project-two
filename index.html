@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2</title>
-    <link rel="stylesheet" href="styles/style.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css"> 
 </head>
 <body>
     <!-- From the looks of it, the header consists of a navbar and a container underneath.
     The container will hold two divs side to side. The first of which will be, the h1. The latter will be the
     container for the home-box-header. -->
-    <header>
-        <div class="wrapper">
+    <header class="homeHeader">
+        <div class="wrapper homeHeadWrap">
             <!-- A responsive navbar that utilizes flexbox to horizontally align the list items. -->
             <nav>
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
             <!-- The flex container for the h1 and home-box-header.png -->
-            <article>
-                <div>
-                    <h1>THE<br>RESTAURANT<br>MALL</h1>
+            <article class="headerTitle">
+                <div class="headerTitle__Heading">
+                    <h1>
+                        THE
+                        <br>
+                        <span class="headerTitle__Heading--whiteBG">RESTAURANT</span>
+                        <br>
+                        MALL
+                    </h1>
                 </div>
                 <div></div>
             </article>

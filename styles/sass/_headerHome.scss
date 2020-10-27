@@ -1,0 +1,60 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// 
+
+// NAVBAR START
+.homeHeader {
+    background-image: url(../images/home-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeHeadWrap {
+    @include flexIt(column);
+    padding: 50px;
+}
+
+.homeHeadWrap nav {
+    width: 40%;
+    @include flexIt();
+}
+
+.homeHeadWrap nav ul {
+    // @include flexIt();
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    @include josefineHeader(20px, white, 700, 29px);
+    letter-spacing: 1px;
+    // justify-content: space-between;
+}
+
+.headerTitle {
+    width: 100%;
+    @include flexIt();
+    &__Heading {
+        @include josefineHeader(45px, white, 600);
+        &--whiteBG {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.headerTitle div {
+    width: 25%;
+    padding-bottom: 250px;
+}
+
+.headerTitle div:nth-of-type(2) {
+    width: 75%;
+    height: auto;
+    background-image: url(../images/home-box-header.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 35%;
+    top: 250px;
+}
+
+

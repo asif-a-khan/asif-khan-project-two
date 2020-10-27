@@ -1,0 +1,15 @@
+// Font Styles
+
+@mixin josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px) {
+    font-family: 'Josefin Slab', serif;
+    font-size: $fontSize;
+    font-weight: $weight;
+    color: $color;
+    line-height: $lineHeight;
+}
+
+.bodyText {
+    font-family: 'Barlow', sans-serif;
+    font-size: 28px; 
+    letter-spacing: default;
+}
