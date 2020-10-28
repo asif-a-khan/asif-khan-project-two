@@ -48,6 +48,10 @@ a, a:visited, a:active, a:hover {
     margin: 0 auto;
 }
 
+.blogBody {
+    background-color: $pine;
+}
+
 // Utility
 @mixin flexIt($direction: row) {
     display: flex;
