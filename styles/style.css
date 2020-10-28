@@ -725,7 +725,7 @@ footer p {
 }
 
 .blogMain {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .blogSection {
@@ -826,4 +826,88 @@ footer p {
 .art2FlexContainer article p {
   color: white;
   margin: 25px 0;
+}
+
+.blogArticle4 {
+  position: relative;
+  top: -200px;
+}
+
+.bA4MContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bA4MContainer div {
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-column-gap: 50px;
+}
+
+.c1 {
+  margin-bottom: 300px;
+}
+
+.bA4MContainer h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  margin-top: 0;
+}
+
+.bA4MContainer div figcaption h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FDD300;
+  line-height: 1px;
+  letter-spacing: 1px;
+}
+
+.bA4MContainer div figcaption p {
+  color: white;
+}
+
+.blogForm {
+  margin-top: 100px;
+}
+
+.blogForm fieldset {
+  border: none;
+}
+
+.blogField1 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+.blogField1 input {
+  width: 100%;
+  color: white;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: 0 4px #FDD300;
+          box-shadow: 0 4px #FDD300;
+}
+
+.blogField2 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.blogField2 input {
+  background-color: transparent;
+  color: white;
+  border: solid 4px #FDD300;
+  padding: 5px 10px 200px 10px;
 }

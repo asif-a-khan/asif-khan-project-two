@@ -1,0 +1,70 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// @mixin buttonMaker($pad: 10px, $bgColor: $yellow)
+
+.blogArticle4 {
+    position: relative;
+    top: -200px;
+}
+
+.bA4MContainer {
+    @include flexIt(column);
+}
+
+.bA4MContainer div {
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 50px;
+}
+
+.c1 {
+    margin-bottom: 300px;
+}
+
+.bA4MContainer h3 {
+    @include josefineHeader(40px, white, 400, 58px);
+    letter-spacing: 1.3px;
+    margin-top: 0;
+}
+
+.bA4MContainer div figcaption h5 {
+    @include josefineHeader(24px, $yellow, 700, 1px);
+    letter-spacing: 1px;
+}
+
+.bA4MContainer div figcaption p {
+    color: white;
+}
+
+.blogForm {
+    margin-top: 100px;
+}
+
+.blogForm fieldset {
+    border: none;
+}
+
+.blogField1 {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.blogField1 input {
+    width: 100%;
+    color: white;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 4px $yellow;
+}
+
+.blogField2 {
+    grid-template-columns: 1fr;
+    // grid-auto-rows: 200px;
+}
+
+.blogField2 input {
+    background-color: transparent;
+    color: rgba(255,255,255, 1.0);
+    border: solid 4px $yellow;
+    padding: 5px 10px 200px 10px;
+}
