@@ -1,0 +1,14 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// @mixin buttonMaker($pad: 15px, $bgColor: $yellow)
+
+footer {
+    text-align: center;
+    background-color: #0f0f0f;
+}
+
+footer p {
+    padding: 1px 0;
+    margin: 0;
+    color: white;
+}
