@@ -8,9 +8,19 @@
     line-height: $lineHeight;
 }
 
+@mixin buttonMaker($pad: 15px, $bgColor: $yellow){
+    padding: $pad;
+    background-color: $bgColor;
+}
+
 .bodyText {
     font-family: 'Barlow', sans-serif;
     margin: 0;
     font-size: 28px; 
     letter-spacing: default;
+}
+
+.btn {
+    @include josefineHeader(22.4px, black, 400, 41.6px);
+    text-align: center;
 }

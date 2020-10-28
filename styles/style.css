@@ -255,6 +255,10 @@ figure {
   margin: 0;
 }
 
+img {
+  width: 100%;
+}
+
 ul {
   padding: 0;
 }
@@ -284,6 +288,15 @@ a, a:visited, a:active, a:hover {
   margin: 0;
   font-size: 28px;
   letter-spacing: default;
+}
+
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22.4px;
+  font-weight: 400;
+  color: black;
+  line-height: 41.6px;
+  text-align: center;
 }
 
 .homeHeader {
@@ -371,7 +384,7 @@ a, a:visited, a:active, a:hover {
 }
 
 .homeSection1 {
-  padding: 250px 0 50px 0;
+  padding: 250px 0 150px 0;
 }
 
 .s1Grid {
@@ -438,5 +451,78 @@ a, a:visited, a:active, a:hover {
 
 .icon {
   font-size: 2rem;
+  color: black;
+}
+
+.s2Grid {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 250px;
+  grid-row-gap: 50px;
+}
+
+.s2Grid figure {
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.s2Grid figure img {
+  position: relative;
+}
+
+.s2Grid figure:nth-of-type(1) img {
+  -webkit-box-shadow: 20px 20px #FDD300;
+          box-shadow: 20px 20px #FDD300;
+  top: -75px;
+}
+
+.s2Grid figure:nth-of-type(2) img {
+  -webkit-box-shadow: -20px -20px #FDD300;
+          box-shadow: -20px -20px #FDD300;
+  top: 75px;
+}
+
+.s2Grid article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.s2Grid article:nth-of-type(1) {
+  text-align: left;
+  padding: 50px 15% 50px 0;
+}
+
+.s2Grid article:nth-of-type(2) {
+  text-align: right;
+  padding: 50px 0 50px 15%;
+}
+
+.s2Grid article h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  margin: 0;
+}
+
+.s2Grid article p {
+  color: white;
+  margin: 15px 0 45px 0;
+}
+
+.s2Grid article a {
+  padding: 15px;
+  background-color: #FDD300;
   color: black;
 }

@@ -1,0 +1,59 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// @mixin buttonMaker($pad: 10px, $bgColor: $yellow)
+
+.s2Grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 250px;
+    grid-row-gap: 50px;
+}
+
+.s2Grid figure {
+    justify-self: stretch;
+}
+
+.s2Grid figure img{
+    position: relative;
+}
+
+
+.s2Grid figure:nth-of-type(1) img{
+    box-shadow: 20px 20px $yellow;
+    top: -75px;
+}
+
+.s2Grid figure:nth-of-type(2) img{
+    box-shadow: -20px -20px $yellow;
+    top: 75px;
+}
+
+.s2Grid article {
+    @include flexIt(column);
+    flex-direction: column;
+    justify-content: center;
+}
+.s2Grid article:nth-of-type(1) {
+    text-align: left;
+    padding: 50px 15% 50px 0;
+}
+
+.s2Grid article:nth-of-type(2) {
+    text-align: right;
+    padding: 50px 0 50px 15%;
+}
+
+.s2Grid article h3 {
+    @include josefineHeader(40px, white, 400, 58px);
+    letter-spacing: 1.3px;
+    margin: 0;
+}
+
+.s2Grid article p {
+    color: white;
+    margin: 15px 0 45px 0;
+}
+
+.s2Grid article a {
+    @include buttonMaker();
+    color: black;
+}
