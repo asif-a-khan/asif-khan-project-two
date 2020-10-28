@@ -1,0 +1,38 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// @mixin buttonMaker($pad: 10px, $bgColor: $yellow)
+
+.art2FlexContainer {
+    @include flexIt(column);
+}
+
+.art2FlexContainer figure {
+    position: relative;
+    left: 20px;
+    top: -250px;
+}
+
+.art2FlexContainer figure img {
+    box-shadow: -25px 20px $yellow;
+}
+
+.art2FlexContainer article {
+    position: relative;
+    top: -250px;
+    box-shadow: -5px 5px $yellow;
+    padding: 50px 10%;
+}
+
+.art2FlexContainer article h3 {
+    @include josefineHeader(45px, $yellow);
+}
+
+.art2FlexContainer article h5 {
+    @include josefineHeader(24px, white, 700, 1px);
+    letter-spacing: 1px;
+}
+
+.art2FlexContainer article p {
+    color: white;
+    margin: 25px 0;
+}

@@ -1,3 +1,14 @@
 // Mixins 
 // josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
 // @mixin buttonMaker($pad: 10px, $bgColor: $yellow)
+
+.blogMain {
+    padding: 100px 0;
+}
+
+.blogSection {
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 150px;
+    grid-row-gap: 50px;
+}
+

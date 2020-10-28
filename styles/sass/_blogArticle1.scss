@@ -1,0 +1,41 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// @mixin buttonMaker($pad: 10px, $bgColor: $yellow)
+
+.blogArticle1 {
+    padding: 0 0 50px 10%;
+}
+
+.blogArticle1 div{
+    background-color: $almostBlack;
+    padding: 15px;
+}
+
+.blogArticle1 div figure {
+    position: relative;
+    top: -40px;
+    left: -60px;
+}
+
+.blogArticle1 div article {
+    margin-top: 50px;
+}
+
+.blogArticle1 div figcaption h4, .blogArticle1 div article h4{
+    @include josefineHeader(25px, $yellow, 400, 58px);
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+.blogArticle1 div figcaption p, .blogArticle1 div article p {
+    color: white;
+}
+
+.reDisc li p::before {
+    content: "\2022"; 
+    color: white;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: 0; 
+  }
