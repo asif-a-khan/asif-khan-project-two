@@ -831,6 +831,7 @@ footer p {
 .blogArticle4 {
   position: relative;
   top: -200px;
+  padding-right: 10%;
 }
 
 .bA4MContainer {
@@ -903,6 +904,8 @@ footer p {
 .blogField2 {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  margin-top: 15px;
+  padding: 0;
 }
 
 .blogField2 input {
@@ -910,4 +913,20 @@ footer p {
   color: white;
   border: solid 4px #FDD300;
   padding: 5px 10px 200px 10px;
+}
+
+.blogField3 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.blogField3 input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  text-align: center;
+  background-color: #FDD300;
+  color: black;
 }
