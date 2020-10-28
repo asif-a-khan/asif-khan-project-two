@@ -1,0 +1,33 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// @mixin buttonMaker($pad: 15px, $bgColor: $yellow)
+
+.homeSection3 {
+    padding: 100px;
+}
+
+.s3Wrap {
+    @include flexIt(column);
+    justify-content: center;
+    align-content: center;
+    padding: 0 100px;
+}
+
+.s3Wrap h3 {
+    @include josefineHeader(45px, $yellow, 400);
+    margin-bottom: 15px;
+}
+
+.s3Wrap .bodyText {
+    color: white;
+    margin-bottom: 45px;
+}
+
+.s3Wrap a {
+    @include buttonMaker(15px, black);
+    align-self: center;
+}
+
+.s3Wrap h3, .s3Wrap a {
+    text-align: center;
+}

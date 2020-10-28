@@ -526,3 +526,49 @@ a, a:visited, a:active, a:hover {
   background-color: #FDD300;
   color: black;
 }
+
+.homeSection3 {
+  padding: 100px;
+}
+
+.s3Wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 100px;
+}
+
+.s3Wrap h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  color: #FDD300;
+  line-height: 99.8px;
+  margin-bottom: 15px;
+}
+
+.s3Wrap .bodyText {
+  color: white;
+  margin-bottom: 45px;
+}
+
+.s3Wrap a {
+  padding: 15px;
+  background-color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.s3Wrap h3, .s3Wrap a {
+  text-align: center;
+}
