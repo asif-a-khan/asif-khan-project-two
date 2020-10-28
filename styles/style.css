@@ -583,3 +583,42 @@ a, a:visited, a:active, a:hover {
           flex-direction: row;
   width: 100%;
 }
+
+.s5Grid {
+  padding: 100px 0;
+  -ms-grid-columns: 2fr 9fr;
+      grid-template-columns: 2fr 9fr;
+  grid-column-gap: 50px;
+}
+
+.s5Grid figure {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.s5Grid figure img {
+  position: relative;
+  -webkit-box-shadow: -20px 20px #FDD300;
+          box-shadow: -20px 20px #FDD300;
+}
+
+.s5Grid article h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  color: #FDD300;
+  line-height: 99.8px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.s5Grid article p {
+  margin-bottom: 30px;
+  color: white;
+}
+
+.s5Grid article a {
+  padding: 15px;
+  background-color: black;
+}
