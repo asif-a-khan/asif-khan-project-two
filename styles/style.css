@@ -592,6 +592,9 @@ a, a:visited, a:active, a:hover {
 }
 
 .s5Grid figure {
+  position: relative;
+  left: 20px;
+  top: -20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -610,7 +613,7 @@ a, a:visited, a:active, a:hover {
   color: #FDD300;
   line-height: 99.8px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .s5Grid article p {
@@ -621,4 +624,14 @@ a, a:visited, a:active, a:hover {
 .s5Grid article a {
   padding: 15px;
   background-color: black;
+}
+
+.homeSection6 {
+  padding: 100px 0;
+}
+
+.s6Grid {
+  -ms-grid-columns: 3fr 3fr 3fr;
+      grid-template-columns: 3fr 3fr 3fr;
+  grid-column-gap: 50px;
 }

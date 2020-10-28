@@ -9,6 +9,9 @@
 }
 
 .s5Grid figure {
+    position: relative;
+    left: 20px;
+    top: -20px;
     align-self: center;
 }
 
@@ -20,7 +23,7 @@
 .s5Grid article h3 {
     @include josefineHeader(45px, $yellow);
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .s5Grid article p {
