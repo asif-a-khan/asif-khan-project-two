@@ -278,7 +278,7 @@ a, a:visited, a:active, a:hover {
   margin: 0 auto;
 }
 
-.blogBody {
+.blogBody, .contactBody {
   background-color: #2B331B;
 }
 
@@ -929,4 +929,94 @@ footer p {
   text-align: center;
   background-color: #FDD300;
   color: black;
+}
+
+.contactHeader {
+  background-image: url(../images/contact-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactHeadWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+.contactHeadWrap nav {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contactHeadWrap nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.contactHeaderTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contactHeaderTitle__HeadingContainer {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  line-height: 99.8px;
+}
+
+.contactHeaderTitle__HeadingContainer__Heading--whiteBG {
+  padding-top: 10px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.contactHeaderTitle div {
+  width: 50%;
+  padding-bottom: 300px;
+}
+
+.cMain {
+  -ms-grid-columns: 3fr 7fr;
+      grid-template-columns: 3fr 7fr;
+  grid-gap: 50px;
+  font-size: 5rem;
+  grid-auto-rows: 500px;
+  padding: 100px 0;
+}
+
+.testBox {
+  border: solid 5px cornflowerblue;
+}
+
+.testBox:nth-of-type(odd) {
+  border: solid 5px crimson;
 }

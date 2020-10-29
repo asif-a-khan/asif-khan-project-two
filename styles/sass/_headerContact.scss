@@ -1,0 +1,51 @@
+// Mixins 
+// josefineHeader($fontSize, $color, $weight:400, $lineHeight:99.8px)
+// @mixin buttonMaker($pad: 15px, $bgColor: $yellow)
+
+// NAVBAR START
+.contactHeader {
+    background-image: url(../images/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactHeadWrap {
+    @include flexIt(column);
+    padding: 50px
+}
+
+.contactHeadWrap nav {
+    width: 40%;
+    @include flexIt();
+}
+
+.contactHeadWrap nav ul {
+    // @include flexIt();
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    @include josefineHeader(20px, white, 700, 29px);
+    letter-spacing: 1px;
+    // justify-content: space-between;
+}
+
+.contactHeaderTitle {
+    width: 100%;
+    @include flexIt();
+    &__HeadingContainer {
+        @include josefineHeader(45px, white, 600);
+        &__Heading {
+            &--whiteBG {
+                padding-top: 10px;
+                text-align: center;
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+
+.contactHeaderTitle div {
+    width: 50%;
+    padding-bottom: 300px;
+}
