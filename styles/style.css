@@ -267,9 +267,14 @@ li {
   list-style: none;
 }
 
-a, a:visited, a:active, a:hover {
+a, a:visited, a:active {
   color: white;
   text-decoration: none;
+}
+
+a:hover {
+  -webkit-box-shadow: 0 5px 0 -3px #FDD300;
+          box-shadow: 0 5px 0 -3px #FDD300;
 }
 
 .wrapper {
@@ -878,7 +883,7 @@ footer p {
 }
 
 .blogForm {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .blogForm fieldset {
@@ -945,7 +950,7 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .contactHeadWrap nav {
@@ -1009,14 +1014,130 @@ footer p {
       grid-template-columns: 3fr 7fr;
   grid-gap: 50px;
   font-size: 5rem;
-  grid-auto-rows: 500px;
-  padding: 100px 0;
+  padding-top: 100px;
 }
 
-.testBox {
-  border: solid 5px cornflowerblue;
+.t2 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background-color: #171B0E;
+  padding: 75px 50px;
+  -webkit-transform: translate(0, -200px);
+          transform: translate(0, -200px);
+  -webkit-box-shadow: 20px 20px #FDD300;
+          box-shadow: 20px 20px #FDD300;
 }
 
-.testBox:nth-of-type(odd) {
-  border: solid 5px crimson;
+.t1 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1.5fr 2.5fr;
+      grid-template-rows: 1.5fr 2.5fr;
+  grid-row-gap: 50px;
+}
+
+.contactIconContainer {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.contactIconContainer p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.contactIcon {
+  font-size: 30px;
+  color: #FDD300;
+}
+
+.t1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  color: white;
+}
+
+.bA4MContainer h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  margin-top: 0;
+}
+
+.bA4MContainer div figcaption h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FDD300;
+  line-height: 1px;
+  letter-spacing: 1px;
+}
+
+.bA4MContainer div figcaption p {
+  color: white;
+}
+
+.blogForm {
+  margin-top: 0px;
+}
+
+.blogForm fieldset {
+  border: none;
+}
+
+.blogField1 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+.blogField1 input {
+  width: 100%;
+  color: white;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: 0 4px #FDD300;
+          box-shadow: 0 4px #FDD300;
+}
+
+.blogField2 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.blogField2 input {
+  background-color: transparent;
+  color: white;
+  border: solid 4px #FDD300;
+  padding: 15px 15px 250px 15px;
+}
+
+.blogField3 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.blogField3 input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  text-align: center;
+  background-color: #FDD300;
+  color: black;
 }

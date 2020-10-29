@@ -33,17 +33,65 @@
             </div>
         </header>
         <main class="gridIt wrapper cMain">
-            <div class="contactBox t1">
+            <div class="contactBox t1 gridIt">
+                <div class="contactIconContainer gridIt">
+                    <i class="fab fa-facebook-f contactIcon"></i>
+                    <i class="fab fa-instagram contactIcon"></i>
+                    <i class="fab fa-twitter contactIcon"></i>
+                    <i class="fab fa-whatsapp contactIcon"></i>
+                    <p class="bodyText">info@email.com</p>
+                </div>
                 <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <ul>
-
+                    <li>
+                        <p class="bodyText">
+                            123 - 456 - 789
+                        </p>
+                    </li>
+                    <li>
+                        <p class="bodyText">
+                            123 Queen Street West, Unit 10
+                        </p>
+                    </li>
+                    <li>
+                        <p class="bodyText">
+                            Toronto, Ontario
+                        </p>
+                    </li>
+                    <li>
+                        <p class="bodyText">
+                            M5V2D5
+                        </p>
+                    </li>
                 </ul>
             </div>
-            <div class="conactBox t2">2</div>
+            <div class="conactBox t2">
+                <form action="POST" class="blogForm bodyText">
+                    <fieldset class="gridIt blogField1">
+                        <div>
+                            <label for="aName" class="srOnly">Full Name</label>
+                            <input type="text" id="aName" name="aName" value="Full Name">
+                        </div>
+                        <div>
+                            <label for="aEmail" class="srOnly">Email</label>
+                            <input type="email" id="aEmail" name="aEmail" value="Email Address">
+                        </div>
+                    </fieldset>
+                    <fieldset class="gridIt blogField2">
+                        <label for="aComment" class="srOnly">Message</label>
+                        <input type="text" id="aComment" name="aComment" value="Message">
+                    </fieldset>
+                    <fieldset class="blogField3">
+                        <label for="aSubmit" class="srOnly">Submit</label>
+                        <input type="submit" id="aSubmit" name="aSubmit" value="Post Comment">
+                    </fieldset>
+                 </form>
+            </div>
         </main>
     </div>
+    <footer>
+        <p class="bodyText">
+            Copyright &#169; 2020 <a href="https://junocollege.com/">Created at Juno College</a>
+        </p>
+    </footer>
 </body>
 </html>

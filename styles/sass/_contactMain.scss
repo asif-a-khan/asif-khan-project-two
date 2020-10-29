@@ -6,19 +6,115 @@
     grid-template-columns: 3fr 7fr;
     grid-gap: 50px;
     font-size: 5rem;
-    grid-auto-rows: 500px;
-    padding: 100px 0;
+    padding-top: 100px;
 }
 
-.testBox {
-    border: solid 5px cornflowerblue;
+.t2 {
+    grid-template-columns: 1fr;
+    background-color: $almostBlack;
+    padding: 75px 50px;
+    transform: translate(0, -200px);
+    box-shadow: 20px 20px $yellow;
 }
 
-.testBox:nth-of-type(odd) {
-    border: solid 5px crimson;
+
+.t1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 2.5fr;
+    grid-row-gap: 50px;
+    // padding: 50px;
 }
 
-.t1
+.contactIconContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-row-gap: 5px;
+    // grid-auto-rows: auto;
+    color: white;
+}
+
+.contactIconContainer p {
+    grid-column: 1/5;
+}
+
+.contactIcon {
+    font-size: 30px;
+
+    color: $yellow;
+}
+
+.t1 ul {
+    @include flexIt(column);
+    margin: 0;
+    color: white;
+}
+
+.bA4MContainer h3 {
+    @include josefineHeader(40px, white, 400, 58px);
+    letter-spacing: 1.3px;
+    margin-top: 0;
+}
+
+.bA4MContainer div figcaption h5 {
+    @include josefineHeader(24px, $yellow, 700, 1px);
+    letter-spacing: 1px;
+}
+
+.bA4MContainer div figcaption p {
+    color: white;
+}
+
+.blogForm {
+    margin-top: 0px;
+}
+
+.blogForm fieldset {
+    border: none;
+}
+
+.blogField1 {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    // padding-top: 50px;
+}
+
+.blogField1 input {
+    width: 100%;
+    color: white;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 4px $yellow;
+}
+
+.blogField2 {
+    grid-template-columns: 1fr;
+    margin-top: 15px;
+    padding: 0;
+    // grid-auto-rows: 200px;
+}
+
+.blogField2 input {
+    background-color: transparent;
+    color: rgba(255,255,255, 1.0);
+    border: solid 4px $yellow;
+    padding: 15px 15px 250px 15px;
+}
+
+.blogField3 {
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.blogField3 input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    text-align: center;
+    background-color: $yellow;
+    color: black;
+}
+
 
 
 
