@@ -1145,7 +1145,7 @@ footer p {
 
 @media only screen and (max-width: 1350px) {
   .bodyText {
-    font-size: 18px;
+    font-size: 16px;
   }
   .elim {
     display: none;
@@ -1166,7 +1166,7 @@ footer p {
   }
   .blogHeaderTitle__HeadingContainer {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     color: white;
     line-height: 99.8px;
@@ -1274,7 +1274,7 @@ footer p {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: white;
     line-height: 29px;
@@ -1292,7 +1292,7 @@ footer p {
   }
   .contactHeaderTitle__HeadingContainer {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     color: white;
     line-height: 99.8px;
@@ -1344,7 +1344,7 @@ footer p {
   }
   .headerTitle__HeadingContainer {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     color: white;
     line-height: 99.8px;
@@ -1359,7 +1359,7 @@ footer p {
   }
   .s1Grid div:nth-of-type(2) h2 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 400;
     color: white;
     line-height: 99.8px;
@@ -1422,7 +1422,7 @@ footer p {
   }
   .s2Grid article h3 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     color: white;
     line-height: 58px;
@@ -1471,7 +1471,7 @@ footer p {
   }
   .s3Wrap h3 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     color: #FDD300;
     line-height: 99.8px;
@@ -1492,7 +1492,7 @@ footer p {
     text-align: center;
   }
   .btn {
-    font-size: 18px;
+    font-size: 16px;
   }
   .s5Grid {
     padding: 100px 0;
@@ -1515,7 +1515,7 @@ footer p {
   }
   .s5Grid article h3 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     color: #FDD300;
     line-height: 99.8px;
@@ -1547,7 +1547,7 @@ footer p {
   }
   .blogHeaderTitle__HeadingContainer {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     color: white;
     line-height: 99.8px;

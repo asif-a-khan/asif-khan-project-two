@@ -1,6 +1,6 @@
 @media only screen and (max-width:1350px){
     .bodyText {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .elim {
@@ -16,7 +16,7 @@
         width: 100%;
         @include flexIt();
         &__HeadingContainer {
-            @include josefineHeader(25px, white, 600);
+            @include josefineHeader(23px, white, 600);
             &__Heading {
                 &--whiteBG {
                     padding-top: 10px;
@@ -91,7 +91,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 20px;
-        @include josefineHeader(20px, white, 700, 29px);
+        @include josefineHeader(18px, white, 700, 29px);
         letter-spacing: 1px;
         // justify-content: space-between;
     }
@@ -100,7 +100,7 @@
         width: 100%;
         @include flexIt();
         &__HeadingContainer {
-            @include josefineHeader(25px, white, 600);
+            @include josefineHeader(23px, white, 600);
             &__Heading {
                 &--whiteBG {
                     padding-top: 10px;
@@ -155,7 +155,7 @@
         width: 100%;
         @include flexIt();
         &__HeadingContainer {
-            @include josefineHeader(25px, white, 600);
+            @include josefineHeader(23px, white, 600);
             &__Heading {
                 // @include flexIt(column);
                 &--whiteBG {
@@ -173,7 +173,7 @@
     }
 
     .s1Grid div:nth-of-type(2) h2 {
-        @include josefineHeader(25px, white);
+        @include josefineHeader(23px, white);
         margin: 0;
     }
 
@@ -230,7 +230,7 @@
     }
 
     .s2Grid article h3 {
-        @include josefineHeader(22px, white, 400, 58px);
+        @include josefineHeader(20px, white, 400, 58px);
         letter-spacing: 1.3px;
         margin: 0;
     }
@@ -270,7 +270,7 @@
     }
     
     .s3Wrap h3 {
-        @include josefineHeader(22px, $yellow, 400);
+        @include josefineHeader(20px, $yellow, 400);
         margin-bottom: 15px;
     }
     
@@ -289,7 +289,7 @@
     }
 
     .btn {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .s5Grid {
@@ -311,7 +311,7 @@
     }
     
     .s5Grid article h3 {
-        @include josefineHeader(22px, $yellow);
+        @include josefineHeader(20px, $yellow);
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -334,7 +334,7 @@
         width: 100%;
         @include flexIt();
         &__HeadingContainer {
-            @include josefineHeader(25px, white, 600);
+            @include josefineHeader(23px, white, 600);
             &__Heading {
                 &--whiteBG {
                     padding-top: 10px;
