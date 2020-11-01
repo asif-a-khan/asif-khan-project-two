@@ -1,0 +1,376 @@
+@media only screen and (max-width:1350px){
+    .bodyText {
+        font-size: 18px;
+    }
+
+    .elim {
+        display: none;
+    }
+
+    .d2Move2 {
+        position: relative;
+        top: 250px;
+    }
+
+    .blogHeaderTitle {
+        width: 100%;
+        @include flexIt();
+        &__HeadingContainer {
+            @include josefineHeader(25px, white, 600);
+            &__Heading {
+                &--whiteBG {
+                    padding-top: 10px;
+                    text-align: center;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    
+    .blogHeaderTitle div {
+        width: 25%;
+        padding-bottom: 0;
+    }
+
+    .blogSection {
+        grid-template-columns: 1fr;
+        padding: 0 10%;
+        margin: 0 auto;
+    }
+
+    .blogSection *{
+        position: static;
+        grid-row-gap: 100px;
+        box-shadow: 1 1 red;
+    }
+
+    .blogArticle3 {
+        display: none;
+    }
+
+    .art2FlexContainer article {
+        padding: 0 50px;
+        position: static;
+    }
+
+    .art2FlexContainer figure {
+        position: static;
+    }
+
+    .blogField1 div label.srOnly { 
+        position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;
+    }
+
+    .blogField2 label.srOnly { 
+        position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;
+    }
+
+    .blogField3 label.srOnly { 
+        position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;
+    }
+
+    .contactHeader {
+        background-image: url(../images/contact-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .contactHeadWrap {
+        @include flexIt(column);
+        padding: 50px 0;
+    }
+    
+    .contactHeadWrap nav {
+        width: 40%;
+        @include flexIt();
+    }
+    
+    .contactHeadWrap nav ul {
+        // @include flexIt();
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        @include josefineHeader(20px, white, 700, 29px);
+        letter-spacing: 1px;
+        // justify-content: space-between;
+    }
+    
+    .contactHeaderTitle {
+        width: 100%;
+        @include flexIt();
+        &__HeadingContainer {
+            @include josefineHeader(25px, white, 600);
+            &__Heading {
+                &--whiteBG {
+                    padding-top: 10px;
+                    text-align: center;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    
+    .contactHeaderTitle div {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .cMain {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+        padding: 50px 0;
+    }
+
+    .t2 {
+        position: static;
+        transform: translate(0, 0);
+    }
+
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .homeHeader {
+        background-size: cover;
+    }
+
+    .headerTitle div,
+    .headerTitle__HeadingContainer{
+        padding-bottom: 0;
+    }
+
+    // .navBar {
+    //     position: fixed;
+    //     margin: 0;
+    // }
+
+    .navBar ul {
+        background-color: $almostBlack;
+        opacity: 0.8;
+    }
+
+    .headerTitle {
+        width: 100%;
+        @include flexIt();
+        &__HeadingContainer {
+            @include josefineHeader(25px, white, 600);
+            &__Heading {
+                // @include flexIt(column);
+                &--whiteBG {
+                    // padding-top: 10px;
+                    text-align: center;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .homeSection1 {
+        padding: 100px 0;
+    }
+
+    .s1Grid div:nth-of-type(2) h2 {
+        @include josefineHeader(25px, white);
+        margin: 0;
+    }
+
+
+    .s1Grid {
+        grid-template-columns: 1fr;
+    }
+
+   .iconContainer {
+       margin-right: 25px;
+   }
+
+   .s2Grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 100px;
+        padding-top: 50px;
+    }
+
+    .s2Grid figure {
+        justify-self: stretch;
+    }
+
+    .s2Grid figure img{
+        position: static
+    }
+
+
+    .s2Grid figure:nth-of-type(1) img{
+        box-shadow: 20px 20px $yellow;
+        // top: -75px;
+    }
+
+    .s2Grid figure:nth-of-type(2) img{
+        box-shadow: -20px -20px $yellow;
+        // top: 75px;
+    }
+
+    .s2Grid article {
+        @include flexIt(column);
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .s2Grid article:nth-of-type(1) {
+        text-align: center;
+        padding: 0 15%;
+        order: 1;
+    }
+
+    .s2Grid article:nth-of-type(2) {
+        text-align: center;
+        padding: 0 15%;
+        order: 3;
+    }
+
+    .s2Grid article h3 {
+        @include josefineHeader(22px, white, 400, 58px);
+        letter-spacing: 1.3px;
+        margin: 0;
+    }
+
+    .s2Grid article p {
+        color: white;
+        margin: 15px 0 45px 0;
+    }
+
+    .s2Grid article a {
+        @include buttonMaker();
+        color: black;
+    }
+
+    .d2Move2,
+    .d2Move1 {
+        position: static;
+    }
+
+    .d2Move1 {
+        order: 2;
+    }
+
+    .d2Move2 {
+        order: 4;
+    }
+
+    .homeSection3 {
+        padding: 100px 0;
+    }
+    
+    .s3Wrap {
+        @include flexIt(column);
+        justify-content: center;
+        align-content: center;
+        // padding: 0 100px;
+    }
+    
+    .s3Wrap h3 {
+        @include josefineHeader(22px, $yellow, 400);
+        margin-bottom: 15px;
+    }
+    
+    .s3Wrap .bodyText {
+        color: white;
+        margin-bottom: 45px;
+    }
+    
+    .s3Wrap a {
+        @include buttonMaker(15px, black);
+        align-self: center;
+    }
+    
+    .s3Wrap h3, .s3Wrap a {
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .s5Grid {
+        padding: 100px 0;
+        grid-template-columns: 1fr;
+        grid-column-gap: 50px;
+    }
+    
+    .s5Grid figure {
+        position: relative;
+        left: 20px;
+        top: -20px;
+        align-self: center;
+    }
+    
+    .s5Grid figure img {
+        position: relative;
+        box-shadow: -20px 20px $yellow;
+    }
+    
+    .s5Grid article h3 {
+        @include josefineHeader(22px, $yellow);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .s5Grid article p {
+        margin-bottom: 30px;
+        color: white;
+    }
+    
+    .s5Grid article a {
+        @include buttonMaker(15px, black);
+    }
+
+    .s6Grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+    }
+
+    .blogHeaderTitle {
+        width: 100%;
+        @include flexIt();
+        &__HeadingContainer {
+            @include josefineHeader(25px, white, 600);
+            &__Heading {
+                &--whiteBG {
+                    padding-top: 10px;
+                    text-align: center;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    
+    .blogHeaderTitle div {
+        width: 25%;
+        padding-bottom: 0;
+    }
+
+    .blogSection {
+        grid-template-columns: 1fr;
+        padding: 0 10%;
+        margin: 0 auto;
+    }
+
+    .blogArticle1 div figcaption h4, .blogArticle1 div article h4{
+        @include josefineHeader(20px, $yellow, 400, 58px);
+        letter-spacing: 0.8px;
+        margin: 0;
+    }
+
+    .blogSection *{
+        position: static;
+        grid-row-gap: 100px;
+        box-shadow: 1 1 red;
+    }
+
+    .blogArticle3 {
+        display: none;
+    }
+}
+

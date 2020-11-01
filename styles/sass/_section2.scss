@@ -57,24 +57,3 @@
     @include buttonMaker();
     color: black;
 }
-
-@media only screen and (max-width:1550px){
-    .s2Grid figure:nth-of-type(2) img{
-        box-shadow: -20px -20px $yellow;
-        top: 150px;
-    }
-}
-
-@media only screen and (max-width:1380px){
-    .s2Grid figure:nth-of-type(2) img{
-        box-shadow: -20px -20px $yellow;
-        top: 300px;
-    }
-}
-
-@media only screen and (max-width:1200px){
-    .s2Grid figure:nth-of-type(2) img{
-        box-shadow: -20px -20px $yellow;
-        top: 350px;
-    }
-}
